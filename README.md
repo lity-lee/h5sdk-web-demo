@@ -9,7 +9,7 @@ http://h5-demo.sdk.2bx.com/index.html
 
 
 
-二、Q&A
+二、Q&A <br/>
 Q:珊瑚-X5 H5 JS-SDK只适用于安卓端，那iOS端呢? 
 A:珊瑚正在拓展iOS的H5广告资源中，敬请期待。
 Q:我怎么可以判断自己的安卓环境是否X5内核? 
