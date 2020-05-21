@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+  <meta name="description" content="不超过150个字符"/>
+  <meta name="keywords" content=""/>
+  <meta content="tom" name="author"/>
+  <title>珊瑚-X5</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript">
+    //引入该flexible.min.js
+    !function(e,t){function n(){var n=l.getBoundingClientRect().width;t=t||540,n>t&&(n=t);var i=100*n/e;r.innerHTML="html{font-size:"+i+"px;}"}var i,d=document,o=window,l=d.documentElement,r=document.createElement("style");if(l.firstElementChild)l.firstElementChild.appendChild(r);else{var a=d.createElement("div");a.appendChild(r),d.write(a.innerHTML),a=null}n(),o.addEventListener("resize",function(){clearTimeout(i),i=setTimeout(n,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(i),i=setTimeout(n,300))},!1),"complete"===d.readyState?d.body.style.fontSize="16px":d.addEventListener("DOMContentLoaded",function(e){d.body.style.fontSize="16px"},!1)}(750,750);
+  </script>
+</head>
+<body>
+<!-- 正文 -->
+<h3>一、大图广告</h3>
+<div class="box1" id="ad-test-1"></div>
+<h3>二、图文广告</h3>
+<div class="box1" id="ad-test-2"></div>
+<h3>三、视频广告</h3>
+<div class="box1" id="ad-test-3"></div>
+<h3>四、左文右图</h3>
+<div class="box1" id="ad-test-4"></div>
+<h3>五、左图右文</h3>
+<div class="box1" id="ad-test-5"></div>
+<iframe src="https://sdi.3g.qq.com/v/2020050717281811784?preview=true" height="600" frameborder="0"></iframe>
+<script src="https://webcdn.m.qq.com/webcdn/gmall/sdk/coral-x5-adv-sdk.min.js?v=2" id="coral_js" env="pro" appid="8381"></script>
+<script type="application/javascript">
+	window.onload = function () {
+		new CoralAdv("ad-test-1", {         // ad-test-1为页面中某个dom元素的id
+			type: 9,        // 9:大图广告  10：图文广告  11：视频广告  12：左文右图  13：左图右文
+			handleAdEventName: 'handleAdEvent1',       //广告回调事件名称，可不传，默认为handleAdEvent
+			handleAdErrorName: 'handleAdError1',       //广告加载出错事件名称，可不传，默认为handleAdError
+			advShowCb: function(){alert("advShowCb1")},     //广告渲染后回调事件
+			advClickCb: function(){alert("advClickCb1")},   //广告点击后回调事件
+			advCloseCb: function(){alert("advCloseCb1")},   //广告关闭后回调事件
+			advErrorCb: function(errorno){alert("广告加载出错，错误码：" + errorno)}    //广告加载出错回调事件
+		});
+		new CoralAdv("ad-test-2", {
+			type: 10,
+			handleAdEventName: 'handleAdEvent2',
+			handleAdErrorName: 'handleAdError2',
+			advShowCb: function(){alert("advShowCb2")},
+			advClickCb: function(){alert("advClickCb2")},
+			advCloseCb: function(){alert("advCloseCb2")},
+			advErrorCb: function(errorno){alert("广告加载出错，错误码：" + errorno)},
+		});
+    new CoralAdv("ad-test-3", {
+      type: 11,
+      handleAdEventName: 'handleAdEvent3',
+      handleAdErrorName: 'handleAdError3',
+      advShowCb: function(){alert("advShowCb3")},
+      advClickCb: function(){alert("advClickCb3")},
+      advCloseCb: function(){alert("advCloseCb3")},
+      advErrorCb: function(errorno){alert("广告加载出错，错误码：" + errorno)},
+    });
+    new CoralAdv("ad-test-4", {
+      type: 12,
+      handleAdEventName: 'handleAdEvent4',
+      handleAdErrorName: 'handleAdError4',
+      advShowCb: function(){alert("advShowCb4")},
+      advClickCb: function(){alert("advClickCb4")},
+      advCloseCb: function(){alert("advCloseCb4")},
+      advErrorCb: function(errorno){alert("广告加载出错，错误码：" + errorno)},
+    });
+    new CoralAdv("ad-test-5", {
+      type: 13,
+      handleAdEventName: 'handleAdEvent5',
+      handleAdErrorName: 'handleAdError5',
+      advShowCb: function(){alert("advShowCb5")},
+      advClickCb: function(){alert("advClickCb5")},
+      advCloseCb: function(){alert("advCloseCb5")},
+      advErrorCb: function(errorno){alert("广告加载出错，错误码：" + errorno)},
+    });
+	}
+</script>
+</body>
+</html>
