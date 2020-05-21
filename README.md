@@ -4,6 +4,9 @@
 appid请找对接同学分配<br/>
 需在后台配置或者提供域名白名单到珊瑚的对接人员配置<br/>
 
+演示demo
+http://h5-demo.sdk.2bx.com/
+
 二、Q&A <br/>
 Q:H5 JS-SDK只适用于安卓端，那iOS端呢? <br/>
 A:正在拓展iOS的H5广告资源中，敬请期待。<br/>
